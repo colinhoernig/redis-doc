@@ -106,7 +106,7 @@ Note that `SMEMBERS` does not return the elements in the same order we added the
     SADD mynewset b
     SADD mynewset foo
     SADD mynewset hello
-    SINTER myset mynewset => foo,b
+    SINTER myset mynewset => foo,b,hello
 
 `SINTER` can return the intersection between Sets but it is not limited to two Sets. You may ask for the intersection of 4,5, or 10000 Sets. Finally let's check how SISMEMBER works:
 
@@ -149,7 +149,7 @@ The Hash data type
 ---
 
 This is the last data structure we use in our program, and is extremely easy
-to gasp since there is an equivalent in almost every programming language out
+to grasp since there is an equivalent in almost every programming language out
 there: Hashes. Redis Hashes are basically like Ruby or Python hashes, a
 collection of fields associated with values:
 
